@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PROFILE CARD GALLERY</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>PROFILE CARD GALLERY</h1>
+  
+  <div class="buttons">
+    <button onclick="setStyle('style1')" class="active">
+      <i class="fas fa-sun"></i> Style 1
+    </button>
+    <button onclick="setStyle('style2')">
+      <i class="fas fa-leaf"></i> Style 2
+    </button>
+    <button onclick="setStyle('style3')">
+      <i class="fas fa-moon"></i> Style 3
+    </button>
+    <button onclick="resetCardStyles()">
+      <i class="fas fa-sync-alt"></i> Reset
+    </button>
+  </div>
+
+  <div id="card-container" class="style1">
+    <div class="card">
+      <img src="imgs/prabin.jpg" alt="Profile" />
+      <h3>Prabin Khadka</h3>
+      <p>Web Developer with 5+ years of experience building responsive websites and applications.</p>
+      <div class="social-links">
+        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="imgs/raj.jpg" alt="Profile" />
+      <h3>Raj Ghimire</h3>
+      <p>UX/UI Designer passionate about creating intuitive and beautiful user experiences.</p>
+      <div class="social-links">
+        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="imgs/samir.jpg" alt="Profile" />
+      <h3>Samir Bhandari</h3>
+      <p>Data Scientist specializing in machine learning and predictive analytics.</p>
+      <div class="social-links">
+        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
